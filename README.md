@@ -10,29 +10,34 @@ CONFLICT (content): Merge conflict in README.md
 Automatic merge failed; fix conflicts and then commit the result.
 
 
-Introduction
+# Introduction
+
 This little exercise will take you through the basic git mechanisms you need to know about in order to be productive. By the end of this exercise you’ll be able to create and manage your own git repos
 
-Creating and managing your own repo
+## Creating and managing your own repo
 Note: you can do all of this stuff from the command line! You should be using linux. Open up a terminal and do the following:
 
-Your initial commit
-Create a directory named git-basic-exercises
-cd into your new directory
-look at what’s inside using ls -a. It should be empty
-initialize your git repo using git init. Then check ls -a again. Can you spot the difference?
+### Your initial commit
+- Create a directory named git-basic-exercises
+- cd into your new directory
+- look at what’s inside using ls -a. It should be empty
+- initialize your git repo using git init. Then check ls -a again. Can you spot the difference?
 check the status of your repo by typing git status
-type in touch README.md. This creates a new blank file. Then check ls -a and git status again.
-type in git log. The output should make sense to you
-Now add your readme file to your git staging area. Hint: use the git add command
-Then check your git status again. Can you see the difference?
-Try to unstage your file and check your git status again
+- type in touch README.md. This creates a new blank file. Then check ls -a and git status again.
+- type in git log. The output should make sense to you
+- Now add your readme file to your git staging area. Hint: use the git add command
+- Then check your git status again. Can you see the difference?
+- Try to unstage your file and check your git status again
+
 Ok, now for your first commit: Make sure your readme file is staged then type in git commit -m "initial commit" Your output should be something like this:
+
  [master (root-commit) 2103b64] initial commit
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 README.md
 type in git log isn’t that nice? press q to exit
-more commits!
+
+### more commits!
+
 type in nano README.md. This will open up a text editor. Type in some stuff and then press ctrl x to exit. Then y then enter. This will save your changes
 type in cat README.md. This will print your file to the console
 take a look at the git stats again and make sure you understand it
